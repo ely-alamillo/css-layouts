@@ -21,6 +21,7 @@ h2.section-heading {
   font-family: 'Open Sans','Helvetica Neue',
   Helvetica,Arial,sans-serif;
   margin-bottom: 10px;
+  color: black;
 
 }
 
@@ -35,14 +36,21 @@ h2.section-heading {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.navbar-brand {
-  color: white;
+
+.navbar-default .navbar-brand {
+  color: grey;
   font-weight: bold;
 }
 
-.navbar-brand:hover {
-  color: grey;
+.navbar-default .navbar-brand:hover {
+  color: black;
+}
 
+.navbar-header .navbar-toggle {
+ color: #777;
+ font-weight: 800;
+ text-transform: uppercase;
+ font-size: 12px;
 }
 
 .navbar-nav>li>a {
@@ -56,27 +64,23 @@ h2.section-heading {
 }
 
 button.navbar-toggle.collapsed {
-  color: red;
-  border: 2px solid yellow;
-}
-.icon-bar{
-  color: #777;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 12px;
+  color: grey;
+  border: 2px solid grey;
 }
 
-section.top {
-  height: 80vh;
-  background:url(img/header.jpg) no-repeat center center;
+.intro-header {
+  /*height: 80vh;*/
+  background:center center no-repeat ;
   background-size: cover;
   margin-bottom: 50px;
+  height: 595px;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-section a {
+header a {
   color: white;
 }
-section a:hover {
+header a:hover {
   color: white;
 }
 
@@ -88,7 +92,7 @@ div.container {
 }
 
 div.post-heading {
-  margin-top: 20%;
+  margin-top: 100px;
 }
 
 div.post-heading h1 {
@@ -112,6 +116,7 @@ div span {
 
 article.article-text {c
   color: black;
+  margin: 0px 50px 0px 50px;
 }
 
 article>container-fluid {
@@ -125,17 +130,77 @@ blockquote {
   color: #777;
 }
 
-@media only screen
-and (max-device-width: 480px) {
+p a {
+  text-decoration: underline;
+  color: black;
+}
 
-  section.top {  height: 50vh; }
+li {
+  display: inline;
+  list-style: none;
+  padding: 0px 5px 0px 5px;
+}
+
+footer {
+  padding: 50px 0px 65px 0px;
+}
+
+.fa-stack {
+  color: #000000;
+}
+
+p.text-muted {
+  text-align: center;
+  color: grey;
+}
+@media screen
+and (max-width: 767px) {
+
+  /*header.top {  height: 50vh; }*/
+
+  .intro-header {
+    height: 334px;
+  }
 
   div.post-heading h1 {
     font-size: 35px;
   }
 
+  article.article-text {
+    margin: 0px 30px 0px 30px;
+  }
+
   h2.subheading {
     font-size: 22px;
+  }
+
+  div span {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  div.post-heading h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media only screen
+and (max-width: 480px) {
+
+  /*header.top {  height: 35vh; }*/
+
+  div.post-heading h1 {
+    font-size: 25px;
+  }
+
+  article.article-text {
+    margin: 0px 30px 0px 30px;
+  }
+
+  h2.subheading {
+    font-size: 20px;
   }
 
   div span {
@@ -150,10 +215,13 @@ and (max-device-width: 480px) {
 }
 
 @media only screen
-and (max-device-width: 320px) {
+and (max-width: 320px) {
 
-  section.top {  height: 50vh; }
+  /*header.top {  height: 30vh; }*/
 
+  div.post-heading {
+    margin-top: 100px;
+  }
   div.post-heading h1 {
     font-size: 28px;
   }
