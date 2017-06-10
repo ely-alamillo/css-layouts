@@ -175,8 +175,9 @@ and (max-width: 767px) {
   }
 
   div span {
-    font-size: 18px;
-    font-weight: lighter;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
   }
 
   div.post-heading h2 {
@@ -204,8 +205,9 @@ and (max-width: 480px) {
   }
 
   div span {
-    font-size: 18px;
-    font-weight: lighter;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
   }
 
   div.post-heading h2 {
@@ -231,9 +233,9 @@ and (max-width: 320px) {
   }
 
   div span {
-    font-size: 12px;
-    font-weight: lighter;
-    margin: 0px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
 
   }
 
